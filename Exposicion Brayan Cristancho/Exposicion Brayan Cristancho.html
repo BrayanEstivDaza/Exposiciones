@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>probando canvas</title>
+
+<script>
+window.onload = function(){
+	
+	// recibimos el canvas
+	var elemento = document.getElementById('micanvas');
+	//Comprobacion sobre si encontramos un elemento 
+	// y podemos extraer su contexto con egtContext(), que indica compatibildad con canvas 
+
+	if (elemento && elemento.getContext){
+
+	//Accede al contexto  de 2d de este canvas, necesario para dibujar
+	var contexto = elemento.getContext('2d');
+	if (contexto){
+// si tengo el contexto 2d es que todo ha ido bien y puedo empezar a dibujar en el canvas
+//comienzo dibujando un rectangulo
+contexto.fillRect (0,0,550,1000);
+//cambio el color de estilo de dibujo a rojo
+contexto.fillStyle = '#cc0000';
+//dibuja otro rectangulo 
+contexto.fillRect (10,10,550,570);
+		}
+	}
+}
+
+</script>
+</head>
+
+<body>
+	<canvas id= "micanvas" width="4100" height = "400">
+	<br>
+
+<code>
+	<pre>
+		public class hola mundo{
+		public static main (String args []){
+		System.out.println("hola mundo");
+			}
+		}<!--Cuando quiero meter codigo dentro de la pagina se utiliza code y pre-->
+
+	</pre>
+</code>
+</body>
+	</canvas>
+	
+
+</html>
